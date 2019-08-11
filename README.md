@@ -24,7 +24,7 @@ yarn run build
 
 ## debug scripts above
 
-if you use VSCode you can use two configurations: `dev` and `build`.
+You can use two debug configurations `dev` and `build` in VSCode debug view.
 
 ## problem
 
