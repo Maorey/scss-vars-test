@@ -1,0 +1,9 @@
+.app-wrapper {
+  font-size: $medium;
+  color: $colorWhite;
+  background: $colorBackground;
+
+  > button {
+    margin: 5%;
+  }
+}

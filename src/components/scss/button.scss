@@ -1,0 +1,48 @@
+/** default button styles
+ */
+
+.--button {
+  margin: 0;
+  outline: none;
+  line-height: 1;
+  cursor: pointer;
+  transition: 0.1s;
+  font-weight: 500;
+  user-select: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  color: $colorWhite;
+  font-size: $medium;
+  text-align: center;
+  white-space: nowrap;
+  display: inline-block;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  border: 1px solid $colorBorder;
+}
+
+$alpha: 0.6;
+.--button-primary {
+  background: $colorPrimary;
+
+  &:focus,
+  &:hover {
+    background: rgba($colorPrimary, $alpha);
+  }
+}
+.--button-warn {
+  background: $colorWarn;
+
+  &:focus,
+  &:hover {
+    background: rgba($colorWarn, $alpha);
+  }
+}
+.--button-error {
+  background: $colorError;
+
+  &:focus,
+  &:hover {
+    background: rgba($colorError, $alpha);
+  }
+}

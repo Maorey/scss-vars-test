@@ -1,0 +1,26 @@
+{
+  // see: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "dev",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "program": "${workspaceFolder}/node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+      "args": ["--env.platform=web", "--progress", "--watch"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "build",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "program": "${workspaceFolder}/node_modules/webpack/bin/webpack.js",
+      "args": ["--config=webpack.config.js"]
+    }
+  ]
+}
