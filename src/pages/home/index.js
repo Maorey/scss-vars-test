@@ -1,12 +1,15 @@
 import getButton from '@com/Button'
+/// reuse ///
 import '@com/scss/button.scss'
-// import './scss/button.scss'
 
 // import '@/scss/layout.scss'
-import './scss/layout.scss'
-import vars from '@/scss/exportVar.scss'
-// import vars from './scss/exportVar.scss'
+// import vars from '@/scss/exportVar.scss'
 
+/// new file ///
+// import './scss/button.scss'
+
+import './scss/layout.scss'
+import vars from './scss/exportVar.scss'
 
 const app = document.body
 const container = document.createElement('body')

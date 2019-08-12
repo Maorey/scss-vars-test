@@ -32,7 +32,7 @@ function includes(module, entry) {
 }
 /** auto inject scss variables
  */
-function data({ _module }) {
+function data(loaderContext) {
   let scss = `@import "~@/${SCSS_PATH}";`
 
   // entry variables(cover global variables)
@@ -40,11 +40,11 @@ function data({ _module }) {
   let rootDir
   for (key in entry) {
     rootDir = entry[key]
-    if (exists(key, rootDir) && includes(_module, rootDir)) {
+    if (exists(key, rootDir) && includes(loaderContext._module, rootDir)) {
       scss += `@import "~@/pages/${key}/${SCSS_PATH}";`
-      break
     }
   }
+  loaderContext.cacheable(false) // useless
 
   return scss
 }
