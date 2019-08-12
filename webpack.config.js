@@ -44,7 +44,7 @@ function data(loaderContext) {
       scss += `@import "~@/pages/${key}/${SCSS_PATH}";`
     }
   }
-  loaderContext.cacheable(false) // useless
+  // loaderContext.cacheable(false) // useless
 
   return scss
 }
